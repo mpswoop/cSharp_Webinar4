@@ -16,13 +16,17 @@ else if (num < 0)
 {
     for (int i = 1; -i >= num; i++)
     {
-    result = result * i;
+    // result = result * i;
+    result *= i;
     }
+    Console.WriteLine($"Result: {result * -1}");
 }
 
 else for (int i = 1; i <= num; i++)
 {
-    result = result * i;
+//    result = result * i;
+    result *= i;
+
 }
 
-Console.WriteLine($"Result: {result * -1}");
+Console.WriteLine($"Result: {result}");
